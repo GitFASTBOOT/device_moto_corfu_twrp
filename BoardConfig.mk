@@ -70,6 +70,9 @@ BOARD_BOOTIMG_HEADER_VERSION := 2
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel.gz
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 
+#kernel modules
+TW_LOAD_VENDOR_MODULES := "aw9610x.ko bq2597x_mmi_extqc3p.ko bt_drv_connac1x.ko connfem.ko ets_fps.ko exfat.ko fmradio_drv_mt6631.ko focaltech_mtk_v2_mmi.ko fpc_mtk_tee.ko fpsgo.ko fs16xx_dlkm.ko goodix_mtk_gtx8_gesture_mmi.ko goodix_mtk_gtx8_mmi.ko goodix_mtk_gtx8_ts_tools_mmi.ko goodix_mtk_tee.ko gps_drv.ko met.ko mmi_info.ko mmi_parallel_charger_extqc3p.ko moto_f_usbnet.ko qpnp_adaptive_charge.ko sensors_class.ko st21nfc.ko trace_mmstat.ko udc_lib.ko utags.ko wlan_drv_gen4m.ko wmt_chrdev_wifi.ko wmt_drv.ko"
+
 # Partitions size
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
 
@@ -127,8 +130,6 @@ TW_INCLUDE_REPACKTOOLS := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
-
-
 
 
 
