@@ -115,6 +115,9 @@ TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_FRAMERATE := 60
 TW_SCREEN_BLANK_ON_BOOT := true
 
+TW_EXCLUDE_DEFAULT_USB_INIT := true
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
+
 TW_EXTRA_LANGUAGES := true
 TW_USE_TOOLBOX := true
 TW_INCLUDE_REPACKTOOLS := true
